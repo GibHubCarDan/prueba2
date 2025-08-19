@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% block content %}
+<section class="card">
+  <h1>404</h1>
+  <p>
+    La página que buscas no existe.
+    <a href="{{ url_for('home') }}">Volver al inicio</a>
+  </p>
+</section>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block content %}
+<section class="hero card hover-pop">
+  <h1>¡Hola Flask! 🚀</h1>
+  <p>Este es tu mini sitio con navegación y estilos.</p>
+  <a class="btn" href="{{ url_for('about') }}">Saber más</a>
+</section>
+
+<section class="grid">
+  <article class="card hover-pop">
+    <h2>Rápido</h2>
+    <p>Levanta prototipos en minutos con rutas y templates.</p>
+  </article>
+  <article class="card hover-pop">
+    <h2>Ligero</h2>
+    <p>Solo agregas lo que necesitas (ORM, auth, etc.).</p>
+  </article>
+  <article class="card hover-pop">
+    <h2>Escalable</h2>
+    <p>Organiza con blueprints, tests y CI/CD más adelante.</p>
+  </article>
+</section>
+{% endblock %}
